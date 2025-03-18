@@ -16,7 +16,25 @@
         <a href="../1.2_t2.9 - projeto de tarefas/index.html">tarefas</a>
         <a href="../1.2_t2.10 - simulador de sorteio/index.html">sorteio</a>
     </div>
-    
+    <main>
+        <div class="nota-input">
+            <label for="nota-1">digite a primeira nota:</label>
+            <input id="nota-1" type="number">
+        </div>
+        
+        <div class="nota-input">
+            <label for="nota-1">digite a segunda nota:&nbsp;</label>
+            <input id="nota-2" type="number">
+        </div>
+
+        <div class="nota-input">
+            <label for="nota-1">digite a terceira nota:</label>
+            <input id="nota-3" type="number">
+        </div>
+        <button onclick="calcularMedia()">enviar</button>
+        <p id="resultado-numero"></p>
+        <p id="resultado"></p>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

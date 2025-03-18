@@ -1,0 +1,48 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#sidenav{
+    background-color: #000;
+    color: #fff;
+}
+
+#sidenav h1{
+    margin-bottom: -38px;
+}
+
+#sidenav a{
+    background-color: #f00;
+    color: #fc0;
+    width: 200px;
+    padding: 10px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+#sidenav a:hover{
+    color: #fff;
+}
+
+body{
+    background-color: #112;
+}
+
+button{
+    background-color: #a00;
+    border-radius: 8px;
+    color: #fc0;
+    font-size: 25px;
+    padding: 7px;
+}
+
+button:hover{
+    background-color: #f00;
+    cursor: pointer;
+}
+
+h2{
+    color: #fc0;
+    margin: 5px;
+    font-family: 32px;
+}

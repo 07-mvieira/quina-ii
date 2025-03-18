@@ -10,18 +10,38 @@
 <body>
     <div id="sidenav">
         <h1>quina 2</h1>
-        <a href="../1.2_t2.6 - calculadora de médias/index.html">médias</a>
+        <a href="../1.2_t2.6 - ca\lculadora de médias/index.html">médias</a>
         <a href="../1.2_t2.7 - tipos de variáveis/index.html">tipos de variáveis</a>
         <a href="../1.2_t2.8 - operações e expressões matemáticas/index.html">matemática</a>
         <a href="../1.2_t2.9 - projeto de tarefas/index.html">tarefas</a>
         <a href="../1.2_t2.10 - simulador de sorteio/index.html">sorteio</a>
     </div>
     <main>
-        <button onclick="addTarefa()">+</button>
-        <button onclick="removerTarefa()">-</button>
-        <input id="novaTarefa" type="text">
+        <div id="optionCaixa">
+            <button class="option" id="add" onclick="addTarefa()">
+                <!--<span class="option-text">Adicionar tarefa</span>-->
+                <span id="sign">+</span>
+            </button>
+            <button class="option" id="rem" onclick="removeTarefa()">
+                <!--<span class="option-text">Remover tarefa</span>-->
+                <span id="sign">–</span>
+            </button>
+        </div>
+        <div id="novaTarefaCaixa" style="display: none;">
+            <label for="novaTarefa">Digite o nome da nova tarefa:</label>
+            <input id="novaTarefa" type="text">
+            <button class="option" id="add-check" onclick="confirmTarefa()">
+                <span id="sign">✓</span>
+            </button>
+            <button class="option" id="add-cancel" onclick="cancelTarefa()">
+                <span id="sign">×</span>
+            </button>
+        </div>
 
-        <div id="tarefaCaixa">
+        <div id="tarefa-caixa">
+            <div class="tarefa" id="0">
+                <p>Exemplo</p>
+            </div>
             <div class="tarefa" id="1">
                 <p>Exemplo</p>
             </div>

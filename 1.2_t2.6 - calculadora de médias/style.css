@@ -1,0 +1,64 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+#sidenav{
+    background-color: #002c11;
+    color: white;
+}
+
+#sidenav a{
+    color: #00ca9e;
+}
+
+#sidenav a:hover{
+    color: #fff;
+}
+
+body{
+    background-color: #74c2a5;
+}
+
+main, input{
+    font-size: 22px;
+}
+
+input{
+    border-style: groove;
+    border-radius: 5px;
+    background-color: #00182c;
+    color: #fe0;
+}
+
+.nota-input, button{
+    margin: 5px;
+}
+
+button{
+    background-color: #076976;
+    border-color: #00182c;
+    border-radius: 5px;
+    color: #fd0;
+    font-size: 18px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: #00182c;
+    border-color: #076976;
+    cursor: pointer;
+}
+
+#resultado-numero{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #508;
+    font-size: 25px;
+}
+
+#resultado{
+    margin-top: 5px;
+    color: #e0b;
+    font-size: 25px;
+}
