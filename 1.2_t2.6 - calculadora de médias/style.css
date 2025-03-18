@@ -29,6 +29,7 @@ input{
     border-radius: 5px;
     background-color: #00182c;
     color: #fe0;
+    width: 80px;
 }
 
 .nota-input, button{
