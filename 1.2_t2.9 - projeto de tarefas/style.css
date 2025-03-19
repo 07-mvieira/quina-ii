@@ -7,20 +7,7 @@ body{
     color: #fff;
 }
 
-#tarefa-caixa{
-    background-color: #8585fb;
-    border-radius: 3px;
-    padding: 3px;
-    width: 100%;
-}
-
-.tarefa{
-    background-color: #fff;
-    margin: 5px;
-    padding: 3px;
-}
-
-.option{
+.option, .rem{
     border-style: none;
     border-radius: 12px;
     color: white;
@@ -34,6 +21,14 @@ body{
     width: 37px;
 }
 
+.option-text{
+    display: none;
+}
+
+.option:hover ~ .option-text{
+    display: block;
+}
+
 #add, #add-check{
     background-color: #1aa03e;
     color: white;
@@ -44,24 +39,49 @@ body{
     cursor: pointer;
 }
 
-#rem, #add-cancel{
+#sign{
+    font-size: 20px;
+}
+
+#tarefa-caixa{
+    background-color: #8585fb;
+    border-radius: 3px;
+    padding: 3px;
+    width: 100%;
+}
+
+.tarefa{
+    background-color: #fff;
+    border-radius: 3px;
+    display: table;
+    table-layout: fixed;
+    line-height: 32px;
+    min-height: 32px;
+    padding: 3px;
+    padding-left: 8px;
+    margin: 5px;
+    width: 97.5%;
+}
+
+.tarefa p{
+    display: table-cell;
+    font-size: 17px;
+    width: 95.6%;
+    word-wrap: break-word;
+}
+
+.rem{
+    display: table-cell;
+    min-height: 32px;
+    text-align: right;
+}
+
+.rem, #add-cancel{
     background-color: #b81c3b;
     color: white;
     transition: 200ms;
 }
-#rem:hover, #add-cancel:hover{
+.rem:hover, #add-cancel:hover{
     background-color: #ff4000;
     cursor: pointer;
-}
-
-.option-text{
-    display: none;
-}
-
-.option:hover ~ .option-text{
-    display: block;
-}
-
-#sign{
-    font-size: 20px;
 }
