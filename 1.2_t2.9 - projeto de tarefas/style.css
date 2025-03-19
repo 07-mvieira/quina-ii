@@ -1,9 +1,18 @@
 body{
     background-color: #5fa7b5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sidenav{
     background-color: #000;
+    color: #fff;
+}
+
+#sidenav a{
+    color: #2e8;
+}
+
+#sidenav a:hover{
     color: #fff;
 }
 
@@ -22,25 +31,55 @@ body{
 }
 
 .option-text{
-    display: none;
+    display: inline;
 }
 
 .option:hover ~ .option-text{
     display: block;
 }
 
+#add{
+    display: inline;
+    width: 160px;
+}
+
 #add, #add-check{
     background-color: #1aa03e;
     color: white;
-    transition: 200ms;
+    margin-bottom: 10px;
+    transition: 50ms;
 }
 #add:hover, #add-check:hover{
-    background-color: #00ff3c;
+    background-color: #1ade00;
+    cursor: pointer;
+}
+
+.rem, #add-cancel{
+    background-color: #cb183c;
+    color: white;
+    transition: 50ms;
+}
+.rem:hover, #add-cancel:hover{
+    background-color: #ff7300;
     cursor: pointer;
 }
 
 #sign{
     font-size: 20px;
+}
+
+label{
+    color: #fff;
+    font-size: 17px;
+}
+
+#nova-tarefa{
+    border-radius: 3px;
+    border-style: groove;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 3px;
+    width: 30%;
 }
 
 #tarefa-caixa{
@@ -61,6 +100,7 @@ body{
     padding-left: 8px;
     margin: 5px;
     width: 97.5%;
+    justify-content: left;
 }
 
 .tarefa p{
@@ -73,15 +113,5 @@ body{
 .rem{
     display: table-cell;
     min-height: 32px;
-    text-align: right;
-}
-
-.rem, #add-cancel{
-    background-color: #b81c3b;
-    color: white;
-    transition: 200ms;
-}
-.rem:hover, #add-cancel:hover{
-    background-color: #ff4000;
-    cursor: pointer;
+    text-align: center;
 }

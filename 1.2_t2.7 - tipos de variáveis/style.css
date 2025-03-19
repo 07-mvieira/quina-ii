@@ -1,0 +1,11 @@
+#sidenav{
+    background-color: #000;
+}
+
+#sidenav a, h1{
+    color: white
+}
+
+#sidenav a:hover{
+    color: #777
+}
